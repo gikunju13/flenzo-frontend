@@ -48,6 +48,7 @@ window.addEventListener("scroll", () => {
 
 async function loadProducts(){
 
+console.log("Loading products from backend...");
 const response = await fetch("https://flenzo-backend.onrender.com/products");
 
 const products = await response.json();
